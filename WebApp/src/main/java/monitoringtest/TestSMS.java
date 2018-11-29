@@ -34,8 +34,8 @@ public class TestSMS implements Runnable{
 	public void run(){
 		try {
 			//Twilio authorization
-			String ACCOUNT_SID = "ACd798ca089dac69a0173396e3e6b19533";
-			String AUTH_TOKEN = "f64655c6c2b98cb737cdbd138c209ba2";
+			String ACCOUNT_SID = "********************";
+			String AUTH_TOKEN = "********************";
 			Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 			//send sms
 			sendsms();
