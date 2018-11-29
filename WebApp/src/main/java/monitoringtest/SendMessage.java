@@ -23,7 +23,7 @@ public class SendMessage {
 	}
 
 	public SendMessage(String methode, String empfaenger) {
-		String url = "https://mkp-prodtest.tcb.deutschepost.de/mkp-service-adapter-rest/restservices/2.0/messages?applicationId=monitor";
+		String url = "********************";
 		HttpPost post = new HttpPost(url);
 		 
 		String encoding = Base64.getEncoder().encodeToString(("monitor:t$gh!6KiO").getBytes());
