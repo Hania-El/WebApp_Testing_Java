@@ -56,8 +56,8 @@ public class TestEmail implements Runnable{
 	public void run(){
 		try {
 			//Twilio authorization
-			String ACCOUNT_SID = "ACd798ca089dac69a0173396e3e6b19533";
-			String AUTH_TOKEN = "f64655c6c2b98cb737cdbd138c209ba2";
+			String ACCOUNT_SID = "********************";
+			String AUTH_TOKEN = "********************";
 			Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 			
 			//send mail
@@ -151,7 +151,7 @@ public class TestEmail implements Runnable{
 			long minutes = d.toMinutes();
 			//get all unseen mails with relevant sender and subject that are max d minutes old
 			int timelimit = Integer.parseInt(getproperties.getPropertiesFile().getProperty("readmailtimelimit"));
-			if(email.equals("paket@dhl.de")&&message.getSubject().equals("monitoringtest")&&(minutes*60)<=timelimit) {
+			if(email.equals("********************")&&message.getSubject().equals("monitoringtest")&&(minutes*60)<=timelimit) {
 				maillist.add(String.valueOf(message.getContent()).substring(0,LengthmessageID)); 
 				message.setFlag(Flag.SEEN, false);
 		    }
